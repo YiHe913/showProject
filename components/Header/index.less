@@ -1,0 +1,102 @@
+.header {
+  min-width: 1500px;
+  background-color: #fff;
+  &-top {
+    width: 100%;
+    background-color: #4f5390;
+    &-box {
+      margin: 0 auto;
+      width: 1500px;
+      height: 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #fff;
+      line-height: 40px;
+      font-size: 18px;
+    }
+  }
+  &-content {
+    width: 100%;
+    &-box {
+      height: 100px;
+      margin: 0 auto;
+      width: 1500px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &-logo {
+        width: 200px;
+        height: 100%;
+        font-size: 50px;
+        line-height: 100px;
+        text-align: center;
+        color: #4f5390;
+      }
+
+      &-useInfo {
+        display: flex;
+        align-items: center;
+        &-avatar {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          border: 1px solid #999;
+          line-height: 30px;
+          font-size: 22px;
+          text-align: center;
+          color: #999;
+        }
+        & > span {
+          margin: 0 10px;
+          font-size: 18px;
+          color: #666;
+        }
+        :global {
+          .ant-btn {
+            font-size: 12px;
+            line-height: 12px;
+            padding: 5px 5px;
+            height: auto;
+          }
+        }
+      }
+
+      &-menu {
+        display: flex;
+        & > div {
+          margin-right: 50px;
+          & > a {
+            color: #000;
+            &:hover {
+              color: #4f5390;
+            }
+          }
+          &:last-child {
+            margin: 0;
+          }
+        }
+      }
+      &-btns {
+        display: flex;
+        align-items: center;
+        & > a {
+          display: block;
+          font-size: 16px;
+          line-height: 16px;
+          padding: 5px 10px;
+          border-radius: 4px;
+          &:first-child {
+            border: 1px solid #4f5390;
+            color: #4f5390;
+            margin-right: 15px;
+          }
+          &:last-child {
+            background-color: #4f5390;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}

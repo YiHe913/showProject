@@ -1,0 +1,35 @@
+.banner {
+  height: 625px;
+  width: 100%;
+  min-width: 1500px;
+  background: url('../../assets/bg.jpeg') no-repeat;
+  background-size: 100% 100%;
+  margin-bottom: 70px;
+  position: relative;
+  &-search {
+    position: absolute;
+    width: 50%;
+    height: 60px;
+    bottom: -30px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    :global {
+      .ant-input-group > .ant-input:first-child,
+      .ant-input-group-addon:first-child {
+        height: 60px;
+      }
+      .ant-input-search
+        > .ant-input-group
+        > .ant-input-group-addon:last-child
+        .ant-input-search-button {
+        width: 60px;
+        height: 60px;
+        background-color: #4f5390;
+        border-color: #4f5390;
+      }
+      .ant-btn .anticon {
+        font-size: 24px;
+      }
+    }
+  }
+}
