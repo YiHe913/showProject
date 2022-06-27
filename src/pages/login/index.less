@@ -4,25 +4,88 @@
   background: url('../../../assets/bg.jpeg') no-repeat;
   background-size: 100% 100%;
   position: relative;
+
   &-box {
-    width: 500px;
+    width: 800px;
+    height: 404px;
     margin: 0;
-    background: rgba(#fff, 0.6);
-    padding: 30px;
-    border-radius: 8px;
+    padding-top: 32px;
+    background-color: #fff;
+    border-radius: 16px;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+
+    &-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #eee;
+      &-code {
+        width: 50%;
+        text-align: center;
+        padding: 0 30px;
+        border-right: 1px solid #eee;
+        & > img {
+          width: 160px;
+          height: 160px;
+          padding: 10px;
+          border: 1px solid rgba(133, 133, 133, 0.3);
+          border-radius: 9px;
+        }
+      }
+      &-form {
+        padding: 0 32px;
+        :global {
+          .ant-input,
+          .ant-input-affix-wrapper,
+          .ant-input-group,
+          .ant-input-group .ant-input {
+            height: 40px;
+          }
+          .ant-btn-primary {
+            width: 336px;
+            height: 48px;
+            border-radius: 10px;
+            font-size: 17px;
+            font-weight: 800;
+            border: 0;
+            color: #fff;
+          }
+        }
+      }
+    }
+
+    &-footerBar {
+      height: 56px;
+      line-height: 56px;
+      padding: 14px 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &-thirdParty {
+        & > a {
+          margin-right: 16px;
+          & > img {
+            width: 28px;
+            height: 28px;
+          }
+        }
+      }
+    }
+
     & > h2 {
       color: #4f5390;
       font-size: 28px;
       text-align: center;
     }
+
     :global {
       .ant-input-prefix {
         color: #999;
       }
+
       .ant-btn-primary {
         width: 350px;
       }
